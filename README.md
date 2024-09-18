@@ -13,11 +13,12 @@ To install the necessary dependencies run the following command:
     pip install -r requirements.txt
 ```
 ## Get Started
-
+#+BEGIN_SRC bash
 、、、
 git clone https://github.com/Evenwang521/ICAR.git
 cd src
 、、、
+#+END_SRC
 ## Scenes Preparation
 ## Viewpoint Estimation
 we provide an examples of how to estimate viewpoint for target object  `0` in scene `S1_E1`. 
