@@ -13,11 +13,10 @@ To install the necessary dependencies run the following command:
     pip install -r requirements.txt
 ```
 ## Get Started
-#+BEGIN_SRC bash
-、、、
+```
 git clone https://github.com/Evenwang521/ICAR.git
 cd src
-、、、
+```
 #+END_SRC
 ## Scenes Preparation
 ## Viewpoint Estimation
