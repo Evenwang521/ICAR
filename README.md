@@ -17,8 +17,28 @@ To install the necessary dependencies run the following command:
 git clone https://github.com/Evenwang521/ICAR.git
 cd src
 ```
-#+END_SRC
 ## Scenes Preparation
+### PROX
+Please download according to [POSA](https://posa.is.tue.mpg.de/) if using PROX dataset. Then transform it to the coordinate of POSA using the data process procedure.
+```
+cd data_process
+cd PROX
+python prox2posa.py
+```
+### Self-defined Scenes
+If you want to run ICAR in self-defined scenes, we provide a simple reconstruction pipeline and data processing procedure to compute the SDF with semantic labels. 
+
+You can find 3D models of the objects in real environments and manually arranged them in Blender accoring to the physical layouts. Then you can use ran the following scripts with specific parameters modification.
+```
+cd data_process
+cd self-defined
+python transform_export.py # get the transformation of all the ojects
+python get_scene_aabb.py # get the axis-aligned bouding boxes of all objects
+python get_scene_sdf.py # get sdf with semantic labels
+```
+We also provide visualization code and you can visualize the generated sdf. We presented our rencontructed scenes used in Scenario 1 and 2.
+![no reconstruction](./images.reconstruction.png)
+
 ## Viewpoint Estimation
 we provide an examples of how to estimate viewpoint for target object  `0` in scene `S1_E1`. 
 ```
@@ -37,6 +57,4 @@ we provide an examples of how to generate layout for AR elements in Scenario `1`
 ```
 python ./layout.py --scene_name S1_E1 --body_name rp_ethan_posed_012_0_0_00_00 --scenario 1
 ```
-
-## Structure of list of AR elements 
 
