@@ -13,8 +13,9 @@ To install the necessary dependencies run the following command:
     pip install -r requirements.txt
 ```
 ## Get Started
+
 、、、
-git clone --recursive https://github.com/AaronJackson/vrn.git
+git clone https://github.com/Evenwang521/ICAR.git
 cd src
 、、、
 ## Scenes Preparation
