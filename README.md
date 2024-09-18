@@ -1,7 +1,7 @@
 # ICAR : Interaction-Centric Automatic Layout Generation for AR Elements
 We present ICAR, a novel Interaction Centric automatic layout generation framework for AR elements. Our key idea is to use the critical role of human interaction in layout generation for
 AR elements.
-![NO TEASER][./images/teaser.png]
+[./images/teaser.png]
 
 ## Description
 
