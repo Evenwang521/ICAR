@@ -37,7 +37,7 @@ python get_scene_aabb.py # get the axis-aligned bouding boxes of all objects
 python get_scene_sdf.py # get sdf with semantic labels
 ```
 We also provide visualization code and you can visualize the generated sdf. We presented our rencontructed scenes used in Scenario 1 and 2.
-![no reconstruction](./images.reconstruction.png)
+![no reconstruction](./images/reconstruction.png)
 
 ## Viewpoint Estimation
 we provide an examples of how to estimate viewpoint for target object  `0` in scene `S1_E1`. 
